@@ -1,0 +1,243 @@
+@font-face {
+  font-family:"OpenSans-Regular";
+  src: url("https://github.com/moriarty39/mq-diploma2/blob/master/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"OpenSans-Bold";
+  src: url("https://github.com/moriarty39/mq-diploma2/blob/master/fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html {
+  margin-top: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/football_767.jpg?raw=true");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  min-height: 567px;
+  min-width: 320px;
+  padding-left: 20px;
+  padding-top: 35px;
+  padding-bottom: 85px;
+  box-sizing: border-box;
+  background-color: #000000;
+}
+
+.header::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0a0e34;
+  opacity: 0.8;
+}
+
+.header-top {
+  position: relative;
+  height: 70px;
+  width: 135px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.h1-header{
+   font-weight: 700;
+   line-height: 40px;
+}
+
+.header-left {
+margin-top: 135px;
+position: relative;
+z-index: 1;
+text-align: left;
+}
+
+.header-txtst {
+	text-transform: uppercase;
+	color:#ffffff;
+	font-size: 28px;
+	font-family: "OpenSans-Bold",Arial, sans-serif;
+}
+
+.header-right {
+	margin-top: 28px;
+	position: relative;
+	z-index: 1;
+	text-align: left;
+	margin-left: 44px;
+}
+
+
+.header-appstore {
+     position: relative;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     z-index: 1;
+ } 
+
+ .button {
+     text-transform: uppercase; 
+     text-decoration: none;
+     font-size: 8px;
+     color: #ffffff;
+     background-color: #5e42b0;
+     padding: 9px 80px;
+     line-height: 0.3;
+     margin-bottom: 14px;
+     border-radius: 25px;
+ }
+
+ .icon {
+    width: 25px;
+    height: 25px; 
+    fill: #ffffff;
+    margin-right: 10px;
+    vertical-align: middle;
+ }
+ .app-text {
+     font-weight: 700; 
+ }
+
+.header-googleplay {
+position: relative;
+text-align: center;
+display: flex;
+justify-content: center;
+z-index: 1;
+ }
+
+ .google-txt {
+     margin-left: 55px;
+ } 
+
+.athlets {
+	max-width: 320px;
+	min-height: 780px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 26px;
+	box-sizing: border-box;
+}
+
+.athlets-img {
+  min-height: 280px;
+  text-align: center;
+}
+
+.athlets-headline {
+	display: flex;
+	min-height: 80px;
+	vertical-align: center;	
+}
+
+.athlets-headline-text {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: "OpenSans-Bold",Arial, sans-serif;
+	font-size: 50px;
+	color:#e7e7e7;
+}
+
+.athlets-info1 {
+	min-height: 130px;
+	padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.athlets-info1-preview {
+	box-sizing: border-box;
+	min-height: 23px;
+	display: flex;
+	padding-top: 0;
+	padding-bottom: 0;
+	align-items: center;
+}
+
+.athlets-info1-preview-text1 {
+	text-transform: uppercase;
+	font-family: "OpenSans-Bold",Arial, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	box-sizing: border-box;
+	border-bottom: 4px solid #5e42b0;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.athlets-info1-preview-text2 {
+  text-transform: uppercase;
+	font-family: "OpenSans-Bold",Arial, sans-serif;
+	font-size: 23px;
+	color:#c1c1c1;
+	margin-left: 9px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.athlets-info-text {
+	display: inline-block;
+	margin-top: 26px;
+	font-family: "OpenSans-Regular",Arial, sans-serif;
+	font-size: 15px;
+	color: 15px;
+}
+
+.athlets-info1:first-child {
+    padding-top: 27px;
+}
+.athlets-info1:last-child {
+	position:relative;
+	z-index: 1;
+}
+
+.athlets-info1:last-child .athlets-info1-preview {
+	z-index: 1;
+	position: relative;
+}
+
+.athlets-info1:last-child .athlets-info-text {
+	color: #ffffff;
+	z-index: 1;
+	position: relative;
+}
+
+.athlets-info1:last-child .athlets-info1-preview-text1 {
+	border-bottom: 4px solid #ffffff;
+}
+
+.athlets-info1:last-child::after{
+	position: absolute;
+	background-color: #5e42b0;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: inherit;
+}
