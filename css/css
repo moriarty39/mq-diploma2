@@ -78,8 +78,6 @@ body {
   margin-top: 0;
 }
 
-
-
 .store-buttons {
      position: relative;
      display: flex;
@@ -241,7 +239,7 @@ body {
     right: 0;
     margin: 0 auto;
     border-radius: 25%;
-    display : block;
+    display: block;
 }
 
 .content-growth p {
@@ -255,4 +253,87 @@ color: #ffffff;
 
 .empty {
     width: 50%;
+}
+
+.footer {
+    background-color: #000000;
+    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/game_1920.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 960px;
+}
+
+.footer::before {
+    content: "";
+    background-color: #0a0e34;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.8;
+}
+
+.footer-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+
+.footer-image {
+    width: 135px;
+    height: 38px;
+    display: block;
+    margin: auto;
+    padding: 130px 0 30px 0;
+    fill: #ffffff;
+}
+
+.footer-svg {
+    z-index: 2;
+    width: 108px;
+    height: 93px;
+    fill: #ffffff;
+    background-color: #53399e;
+    padding: 27px 15px;
+    border-radius: 25%;
+    margin-right: 35px;
+}
+
+.description {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    font-size: 80px;
+    font-weight: 700;
+  }
+
+.description span:last-child {
+    color: #a496ca;
+    display: block;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+.header2 {
+  background-color: #000000;
+  background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/game_1920.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  height: 960px;
+}
+
+.header2::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #0a0e34;
+  opacity: 0.8;
 }
