@@ -1,4 +1,3 @@
-
 @font-face {
   font-family:"OpenSans-Regular";
   src: url("https://github.com/moriarty39/mq-diploma2/blob/master/fonts/OpenSans-Regular.woff");
@@ -159,12 +158,12 @@ body {
     line-height: 0.8;
 }
 
-.athlets1 {
+.athlets1, .players1 {
     margin-bottom: 60px; 
     display: flex;
 }
 
-.connection {
+.connection, .collaboration, .growth {
     display: flex;
     margin-top: 0;
     margin-bottom: 30px;
@@ -206,14 +205,14 @@ body {
     margin: 0;
 }
 
-.athlets2 { 
+.athlets2, .players2 { 
     background-color: #f6f4fa;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
 }
 
-.athlets3 {
+.athlets3, .players3 {
     background-color: #5e42b0;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -252,7 +251,7 @@ color: #ffffff;
     margin-right: 195px;
 }
 
-.empty {
+.empty, .players-empty {
     width: 50%;
 }
 
@@ -337,4 +336,130 @@ color: #ffffff;
   right: 0;
   background-color: #0a0e34;
   opacity: 0.8;
+}
+
+.players-image {
+    width: 41%;
+    height: 46%;
+    position: absolute;
+    margin-top: 30px;
+    right: 10%;
+}
+
+.players1, .players2, .players3 {
+    flex-direction: row-reverse;
+}
+
+.players3 {
+    background-color: #0a0e34;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+
+.number-players3 {
+    font-size: 18px;
+    color: #9173e6;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    position: relative;
+}
+
+.number-players3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 5px;
+    background-color: #efefef;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 25%;
+    display : block;
+}
+
+.be-active-wrapper, .contact-wrapper {
+    display: flex;
+    position: relative;
+    height: 730px;
+    justify-content: space-between;
+}
+
+.be-active-info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.be-active-image {
+    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/be-active_1024.jpg?raw=true");
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+}
+
+.contact-image {
+    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/find-contact.jpg?raw=true");
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+}
+
+.work-it-image {
+    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/work-it.jpg?raw=true");
+    background-size: cover;
+    width: 50%;
+    background-position: center center;
+}
+
+.be-active-info {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   ustify-content: center;
+   font-size: 24px;
+}
+
+.be-active-content {
+    padding: 0 130px;
+}
+
+.tip {
+    position: absolute;
+    top: 40%;
+    right: 47%;
+}
+
+.tip1 {
+    width: 168px;
+    height: 155px;
+    background-color: #5e42b0;
+    text-align: center;
+    display: inline-block;
+}
+
+.tip-number{
+    font-size: 18px;
+    color: #f5f6f7;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    top: 40%;    
+}
+
+.tip-number::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 5px;
+    background-color: #8f7bc8;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 25%;
+    display : block;
 }
