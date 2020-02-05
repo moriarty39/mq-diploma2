@@ -17,25 +17,23 @@ html {
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 1.2;
-  padding: 0;
-  margin: 0;
+  
+  font-size: 17px;
+  margin: 0 auto;
 }
 
 .header-main {
   background-color: #000000;
   background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/football_767.jpg?raw=true");
-  background-position: center center;
+  background-repeat: no repeat;
   background-size: cover;
   position: relative;
-  height: 960px;
+  padding-bottom: 80px;
+  
+  
 }
 
-.header::after {
+.header-main::after {
   position: absolute;
   content: "";
   top: 0;
@@ -43,40 +41,55 @@ body {
   left: 0;
   right: 0;
   background-color: #0a0e34;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .header-top {
   position: relative;
   margin: 0 auto;
   max-width: 1540px;
-  z-index: 1;
+  z-index: 2;
+  
 }
 
 .header-top-image {
   width: 135px;
-  height: 38px;
   display: block;
-  margin: 0 auto 130px auto;
+  margin-left:auto;
+  margin-right: auto;
   padding-top: 30px;
   fill: #ffffff;
+ 
 }
 
-.header-txtst {
-  font-size: 90px;
-  line-height: 85px;
+.header-highlight {
+  font-size: 67px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 220px;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  font-family: Arial, sans-serif;
+  position: relative;
+  line-height: 0.7;
+  
 }
 
-.header-right {
-  text-align: end;
-  margin-top: 0;
+.top-line {
+  margin-top: 133px;
+  margin-left: 88px;
 }
+
+.bottom-line {
+  margin-top: 30px;
+  margin-left: 435px;
+  
+}
+
+
+
+
+
+
+
 
 .store-buttons {
      position: relative;
@@ -91,29 +104,26 @@ body {
     background: #5e42b0;
     align-items: center;
     justify-content: center;
-    height: 77px;
-    width: 311px;
+    height: 75px;
+    width: 257px;
+    margin-top: 85px;
+    z-index: 2;
  }
 
 .icon:last-child {
     margin-left: 50px;
 }
  
-.icon p {
-    display: inline-block;
-  }
-
 .image-wrap {
     display: inline-block;
     width: 40px;
     height: 50px;
-    margin: 0;
-  }
-
+  margin: 0;}
+  
 .image-wrap svg {
     display: block;
     width: 100%;
-    fill: #fff;
+    fill: #fff; 
   }
 
 .button-txt {
@@ -137,49 +147,98 @@ body {
  
 
 
+
 .athlets {
-    position: relative;
+  position: relative; 
+  padding-top: 83px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
 }
 
+.athlets-headline {
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  right: 53%;
+}
 .athlets-image {
-    width: 30%;
-    height: 51%;
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 190px;
+  min-height: 423px;
 }
 
-.athlets-title {
-    font-size: 80px;
+.athlets-title { 
+    font-size: 61px;
     color: #e7e7e7;
     text-transform: uppercase;
-    margin-top: 72px;
-    margin-bottom: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 48%;
     line-height: 0.8;
+    display: block;
+    font-family: "Opensans-Bold", Arial, sans-serif;
 }
 
-.athlets1, .players1 {
+.athlets1, .athlets2, .athlets3 {
+
+  box-sizing: border-box;
+  padding-top: 38px;
+  padding-left: 48%;
+  
+}
+
+
+.collaboration, .connection, .growth {
+  height: 25px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+
+.athlets-article {
+  display: inline-block;
+  margin-top: 29px;
+  font-family: "Opensans-Bold", Arial, sans-serif;
+  font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.players1 {
     margin-bottom: 60px; 
     display: flex;
 }
 
-.connection, .collaboration, .growth {
-    display: flex;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
 
 .number {
+    padding-top: 0;
+    padding-bottom: 7px;
     font-size: 18px;
     color: #000000;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     position: relative;
+    box-sizing: border-box;
 }
 
 .number::after {
     content: "";
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -187,32 +246,39 @@ body {
     height: 5px;
     background-color: #5e42b0;
     right: 0;
-    margin: 0 auto;
-    border-radius: 25%;
     display : block;
 }
 
 .title {
-    margin-left: 16px;
+  font-family: "OpenSans-Bold", Arial, sans-serif;
+    margin-left: 11px;
+    padding-top: 0;
+    padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 36px;
+    font-size: 25px;
     text-transform: uppercase;
     color: #c1c1c1;
 }
 
-.content p {
-    margin: 0;
+
+.athlets3 {
+  background-color: #5e42b0;
 }
 
-.athlets2, .players2 { 
+
+
+
+
+
+.players2 { 
     background-color: #f6f4fa;
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
 }
 
-.athlets3, .players3 {
+.players3 {
     background-color: #5e42b0;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -220,16 +286,20 @@ body {
 }
 
 .number3 {
+    padding-top: 0;
+    padding-bottom: 7px;
     font-size: 18px;
     color: #000000;
-    margin-top: 10px;
-    margin-bottom: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 700;
     position: relative;
+    box-sizing: border-box;
 }
 
 .number3::after {
     content: "";
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -237,88 +307,64 @@ body {
     height: 5px;
     background-color: #efefef;
     right: 0;
-    margin: 0 auto;
-    border-radius: 25%;
-    display: block;
+    display : block;
 }
 
-.content-growth p {
-color: #ffffff;
-}
 
-.info {
-    width: 50%;
-    margin-right: 195px;
-}
-
-.empty, .players-empty {
-    width: 50%;
-}
 
 .footer {
+    width: 100%;
     background-color: #000000;
-    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/game_1920.jpg");
+    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/game_1920.jpg?raw=true" );
     background-position: center center;
     background-size: cover;
     position: relative;
-    height: 960px;
+    padding-top: 100px;
+    padding-left: 23px;
+    padding-right: 23px;
 }
 
-.footer::before {
-    content: "";
-    background-color: #0a0e34;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.8;
-}
 
 .footer-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding-top: 200px;
+  width: 71px;
+  height: 71px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.footer-image {
-    width: 135px;
-    height: 38px;
-    display: block;
-    margin: auto;
-    padding: 130px 0 30px 0;
-    fill: #ffffff;
-}
+
 
 .footer-svg {
-    z-index: 2;
-    width: 108px;
-    height: 93px;
     fill: #ffffff;
-    background-color: #53399e;
-    padding: 27px 15px;
-    border-radius: 25%;
-    margin-right: 35px;
+    display: block;
 }
 
-.description {
+
+.store-action {
     color: #ffffff;
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 150px;
-    font-size: 80px;
-    font-weight: 700;
-  }
+    font-family: "OpenSans-Bold", Arial, sans-serif;
+    z-index: 2;
+}
 
-.description span:last-child {
-    color: #a496ca;
-    display: block;
-    font-weight: 400;
-    font-size: 30px;
-  }
+.top-phrase {
+  font-size: 36px;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+  position-relative;
+  margin-top: 61px;
+}
 
-.header2 {
+.bottom-phrase {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  position-relative;
+}
+
+
+.footer-bottom {
   background-color: #000000;
   background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/game_1920.jpg");
   background-position: center center;
@@ -327,7 +373,7 @@ color: #ffffff;
   height: 960px;
 }
 
-.header2::after {
+.footer::after {
   position: absolute;
   content: "";
   top: 0;
@@ -336,6 +382,23 @@ color: #ffffff;
   right: 0;
   background-color: #0a0e34;
   opacity: 0.8;
+}
+
+.footer-image {
+  width: 135px;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  padding-top: 30px;
+  fill: #ffffff;
+  
+}
+
+.footer-bottom {  
+  position: relative;
+  margin: 0 auto;
+  max-width: 1540px;
+  z-index: 2;
 }
 
 .players-image {
