@@ -29,6 +29,10 @@ body {
   background-size: cover;
   position: relative;
   padding-bottom: 80px;
+  width: 100%;
+  /*min-height: 571px;*/
+  box-sizing: border-box;
+  /*background-position: center;*/
   
   
 }
@@ -46,9 +50,12 @@ body {
 
 .header-top {
   position: relative;
-  margin: 0 auto;
-  max-width: 1540px;
+  margin-left: auto;
+  margin-right: auto;
+  /*max-width: 1540px;*/
   z-index: 2;
+  display: block;
+  
   
 }
 
@@ -95,6 +102,7 @@ body {
      position: relative;
      display: flex;
      justify-content: center;
+  z-index: 10;
  } 
 
  .icon {
@@ -107,7 +115,8 @@ body {
     height: 75px;
     width: 257px;
     margin-top: 85px;
-    z-index: 2;
+    z-index: 10;
+   position: relative;
  }
 
 .icon:last-child {
@@ -118,7 +127,8 @@ body {
     display: inline-block;
     width: 40px;
     height: 50px;
-  margin: 0;}
+  margin: 0;
+}
   
 .image-wrap svg {
     display: block;
@@ -148,7 +158,10 @@ body {
 
 
 
-.athlets {
+
+
+
+.athlets, .players {
   position: relative; 
   padding-top: 83px;
   margin: 0 auto;
@@ -162,9 +175,20 @@ body {
   top: 25px;
   right: 53%;
 }
+
+.players-headline {
+  text-align: center;
+  position: absolute;
+  top: 47px;
+  left: 59%;
+  bottom: 41px;
+}
+
 .athlets-image {
   min-height: 423px;
 }
+
+
 
 .athlets-title { 
     font-size: 61px;
@@ -179,11 +203,34 @@ body {
     font-family: "Opensans-Bold", Arial, sans-serif;
 }
 
+.players-title { 
+    font-size: 61px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 10%;
+    line-height: 0.8;
+    display: block;
+    font-family: "Opensans-Bold", Arial, sans-serif;
+}
+
+
+
 .athlets1, .athlets2, .athlets3 {
 
   box-sizing: border-box;
   padding-top: 38px;
   padding-left: 48%;
+  
+}
+
+.players1, .players2, .players3 {
+
+  box-sizing: border-box;
+  padding-right: 51%;
+  padding-left: 29px;
   
 }
 
@@ -204,8 +251,18 @@ body {
   font-size: 17px;
 }
 
+.players-article {
+  display: inline-block;
+  margin-top: 29px;
+  font-family: "Opensans-Bold", Arial, sans-serif;
+  font-size: 17px;
+}
 
-
+.players-article:last-child {
+  color: #000000;
+  position: relative;
+  z-index: 10;
+}
 
 
 
@@ -235,6 +292,7 @@ body {
     position: relative;
     box-sizing: border-box;
 }
+
 
 .number::after {
     content: "";
@@ -297,6 +355,18 @@ body {
     box-sizing: border-box;
 }
 
+.number3-p {
+    padding-top: 0;
+    padding-bottom: 7px;
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    position: relative;
+    box-sizing: border-box;
+}
+
 .number3::after {
     content: "";
     width: 100%;
@@ -310,6 +380,18 @@ body {
     display : block;
 }
 
+.number3-p::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 5px;
+    background-color: #efefef;
+    right: 0;
+    display : block;
+}
 
 
 .footer {
@@ -330,13 +412,17 @@ body {
   height: 71px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 10;
 }
 
 
 
-.footer-svg {
-    fill: #ffffff;
-    display: block;
+.footer-image {
+  fill: #ffffff;
+  display: block;
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -344,7 +430,8 @@ body {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", Arial, sans-serif;
-    z-index: 2;
+    position: relative;
+  z-index: 10;
 }
 
 .top-phrase {
@@ -401,128 +488,80 @@ body {
   z-index: 2;
 }
 
-.players-image {
-    width: 41%;
-    height: 46%;
-    position: absolute;
-    margin-top: 30px;
-    right: 10%;
+
+.advice {
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 0;
+  padding-left: 20px;
+  padding-rigt: 20px;
 }
 
-.players1, .players2, .players3 {
-    flex-direction: row-reverse;
+.active {
+  display: flex;
 }
 
-.players3 {
-    background-color: #0a0e34;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    display: flex;
+
+
+.active-headline {
+  position: relative;
+  flex: auto;
+  max-width: 50%;
 }
 
-.number-players3 {
-    font-size: 18px;
-    color: #9173e6;
-    margin-top: 10px;
-    margin-bottom: 7px;
-    font-weight: 700;
-    position: relative;
+.active-image {
+  flex: auto;
+  width: 100%;
 }
 
-.number-players3::after {
-    content: "";
+.active-number {
+  position: absolute;
+  height: 73px;
+  width: 73px;
+  background-color: #5e42b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 203px;
+}
+
+.active-number-1 {
+  display: block;
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-size: 16px;
+  color: #f5f6f7;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.active-number-1::after {
+  content: "";
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 20px;
     height: 5px;
-    background-color: #efefef;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 25%;
-    display : block;
+    background-color: #ffffff;
+   opacity: 0.4;
 }
 
-.be-active-wrapper, .contact-wrapper {
-    display: flex;
-    position: relative;
-    height: 730px;
-    justify-content: space-between;
+.active-advice {
+  padding: 33px 21px 76px 21px;
+  box-sizing: border-box;
+  flex: auto;
+  max-width: 50%;
+  padding-top: 213px;
 }
 
-.be-active-info {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.tip-text {
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  display: inline-block;
+  margin-top: 26px;
 }
 
-.be-active-image {
-    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/be-active_1024.jpg?raw=true");
-    background-size: cover;
-    width: 50%;
-    background-position: center center;
-}
 
-.contact-image {
-    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/find-contact.jpg?raw=true");
-    background-size: cover;
-    width: 50%;
-    background-position: center center;
-}
 
-.work-it-image {
-    background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/work-it.jpg?raw=true");
-    background-size: cover;
-    width: 50%;
-    background-position: center center;
-}
 
-.be-active-info {
-   width: 50%;
-   display: flex;
-   align-items: center;
-   ustify-content: center;
-   font-size: 24px;
-}
-
-.be-active-content {
-    padding: 0 130px;
-}
-
-.tip {
-    position: absolute;
-    top: 40%;
-    right: 47%;
-}
-
-.tip1 {
-    width: 168px;
-    height: 155px;
-    background-color: #5e42b0;
-    text-align: center;
-    display: inline-block;
-}
-
-.tip-number{
-    font-size: 18px;
-    color: #f5f6f7;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-    margin: 0;
-    top: 40%;    
-}
-
-.tip-number::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 20px;
-    height: 5px;
-    background-color: #8f7bc8;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 25%;
-    display : block;
-}
