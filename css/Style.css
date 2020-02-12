@@ -24,7 +24,7 @@ body {
 
 .header-main {
   background-color: #000000;
-  background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/football_767.jpg?raw=true");
+  background-image: url("https://github.com/moriarty39/mq-diploma2/blob/master/images/football_1920.jpg?raw=true");
   background-repeat: no repeat;
   background-size: cover;
   position: relative;
@@ -230,7 +230,7 @@ body {
 
   box-sizing: border-box;
   padding-right: 51%;
-  padding-left: 29px;
+  
   
 }
 
@@ -275,10 +275,7 @@ body {
 
 
 
-.players1 {
-    margin-bottom: 60px; 
-    display: flex;
-}
+
 
 
 .number {
@@ -324,23 +321,24 @@ body {
   background-color: #5e42b0;
 }
 
-
-
-
-
+.players1 {
+    margin-bottom: 60px; 
+    padding-left: 0px;
+    padding-top: 25px;
+}
 
 .players2 { 
     background-color: #f6f4fa;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    padding-left: 0;
 }
 
 .players3 {
     background-color: #5e42b0;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    padding-left: 0px;
 }
 
 .number3 {
@@ -500,14 +498,33 @@ body {
 
 .active {
   display: flex;
+  width: 100%;
+  position: relative;
 }
 
+.active:nth-child(even){
+  order: 2;
+}
 
+.active:nth-child(odd) {
+  padding-left: 131px;
+  padding-right: 11%;
+}
+
+.active:nth-child(even) {
+  padding-left: 11%;
+  padding-right: 120px;
+}
+
+.active:nth-child(even) {
+  left: -91px;
+  top: 211px;
+}
 
 .active-headline {
   position: relative;
   flex: auto;
-  max-width: 50%;
+  width: 100%;
 }
 
 .active-image {
@@ -517,13 +534,14 @@ body {
 
 .active-number {
   position: absolute;
-  height: 73px;
-  width: 73px;
+  height: 11vw;
+  width: 11vw;
   background-color: #5e42b0;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 203px;
+  top: 209px;
+ left: calc(100%-82px);
 }
 
 .active-number-1 {
@@ -561,7 +579,6 @@ body {
   display: inline-block;
   margin-top: 26px;
 }
-
 
 
 
