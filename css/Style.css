@@ -235,7 +235,7 @@ body {
 
   padding-top: 38px;
   box-sizing: border-box;
-  padding-left: 10%;
+  padding-left: 8%;
   
 }
 
@@ -337,7 +337,6 @@ body {
 
 .players1 {
     margin-bottom: 60px; 
-    padding-left: 0px;
     padding-top: 25px;
 }
 
@@ -345,14 +344,12 @@ body {
     background-color: #f6f4fa;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 0;
 }
 
 .players3 {
     background-color: #00008b;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 0px;
 }
 
 .number3 {
