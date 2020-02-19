@@ -82,6 +82,11 @@ body {
   
 }
 
+.h1 {
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 .top-line {
   margin-top: 133px;
   margin-left: 88px;
@@ -188,37 +193,41 @@ body {
   right: 53%;
 }
 
+
+
 .players-headline {
   position: absolute;
   top: 25px;
-  right: 15%;
+  left: 50%;
 }
 
 
 .athlets-title { 
-    font-size: 83px;
+    font-size: 81px;
     color: #e7e7e7;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
-    padding-left: 41%;
-    line-height: 0.5;
+    padding-left: 48%;
+    line-height: 0.8;
     display: block;
     font-family: "OpenSans-Bold", Arial, sans-serif;
+    
 }
 
 .players-title { 
-    font-size: 61px;
+    font-size: 81px;
     color: #e7e7e7;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
-    padding-left: 10%;
+    padding-left: 8%;
     line-height: 0.8;
     display: block;
     font-family: "Opensans-Bold", Arial, sans-serif;
+    margin-bottom: 20px;
 }
 
 
@@ -226,26 +235,56 @@ body {
 .athlets1, .athlets2, .athlets3 {
 
   box-sizing: border-box;
-  padding-top: 38px;
   padding-left: 48%;
-  
 }
 
-.players1, .players2, .players3 {
+.athlets1 {
+  padding-top: 88px;
+}
 
-  padding-top: 38px;
+.athlets2 {
+  padding-top: 70px;
+  padding-bottom: 58px;
+}
+
+.athlets3 {
+  padding-top: 50px;
+  padding-bottom: 58px;
+}
+
+
+.players1, .players2, .players3 {
   box-sizing: border-box;
   padding-left: 8%;
-  
+}
+
+.players1 {
+  padding-top: 90px;
+  padding-bottom: 28px;
+}
+
+.players2 {
+  padding-top: 38px;
+  padding-bottom: 28px;
+}
+
+.players3 {
+  padding-top: 38px;
+  padding-bottom: 28px;
 }
 
 
 .collaboration, .connection, .growth {
   height: 25px;
+  padding-top: 44px;
   display: flex;
   align-items: center;
   box-sizing: border-box;
   
+}
+
+.athlets2 {
+  background-color: #e7e7e7;
 }
 
 
@@ -325,7 +364,7 @@ body {
     padding-bottom: 0;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 25px;
+    font-size: 36px;
     text-transform: uppercase;
     color: #c1c1c1;
 }
@@ -335,21 +374,23 @@ body {
   background-color: #5e42b0;
 }
 
-.players1 {
+/*.players1 {
     margin-bottom: 60px; 
     padding-top: 25px;
-}
+}*/
 
 .players2 { 
     background-color: #f6f4fa;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /*padding-top: 60px;
+    padding-bottom: 60px;*/
+    
 }
 
 .players3 {
     background-color: #00008b;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /*padding-top: 60px;
+    padding-bottom: 60px;*/
+    
 }
 
 .number3 {
@@ -420,46 +461,58 @@ body {
 
 
 .footer-title {
-  width: 71px;
-  height: 71px;
+  
   margin-left: auto;
   margin-right: auto;
-  position: relative;
   z-index: 10;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 
 
-.footer-image {
+.footer-svg {
   fill: #ffffff;
-  display: block;
   position: relative;
   z-index: 10;
+  margin-left: 0;
+  margin-right: 0;
+  width: 118px;
+  height: 107px;
 }
 
+.footer-logo1 {
+  width: 99px;
+}
 
 .store-action {
     color: #ffffff;
     text-transform: uppercase;
     font-family: "OpenSans-Bold", Arial, sans-serif;
     position: relative;
-  z-index: 10;
+    z-index: 10;
+    margin-left: 32px;
+    display: block;
 }
 
 .top-phrase {
-  font-size: 36px;
+  font-size: 33px;
   display: block;
   text-align: center;
   box-sizing: border-box;
-  position-relative;
+  position: relative;
   margin-top: 61px;
+  padding: 0;
 }
 
 .bottom-phrase {
   font-size: 16px;
   display: block;
   text-align: center;
-  position-relative;
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 
@@ -470,6 +523,18 @@ body {
   background-size: cover;
   position: relative;
   height: 960px;
+}
+
+
+.footer-svg {
+  width: 65px;
+  height: 65px;
+  background-color: #7453d3;
+  border-radius: 20%;
+  padding: 5px 3px 5px 3px;
+  z-index: 2;
+  position: relative; 
+  fill: white;
 }
 
 .footer::after {
@@ -489,7 +554,6 @@ body {
   margin-left:auto;
   margin-right: auto;
   padding-top: 30px;
-  fill: #ffffff;
   
 }
 
@@ -510,10 +574,10 @@ body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
-  padding-top: 0;
+  /*padding-top: 0;
   padding-left: 20px;
   padding-rigt: 20px;
-  /*padding-bottom: 0;*/
+  padding-bottom: 0;*/
 }
 
 .active {
@@ -614,17 +678,6 @@ order: 2;
     line-height: 0.8;
 }
 
-
-.footer-svg {
-  width: 65px;
-  height: 65px;
-  background-color: #7453d3;
-  border-radius: 20%;
-  padding: 5px 3px 5px 3px;
-  z-index: 2;
-  position: relative; 
-  fill: white;
-}
 
 
 
