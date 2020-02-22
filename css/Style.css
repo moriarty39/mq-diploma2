@@ -82,7 +82,7 @@ body {
   
 }
 
-.h1 {
+h1 {
   margin-left: auto; 
   margin-right: auto;
   max-width: 1540px;
@@ -184,6 +184,7 @@ body {
   margin: 0 auto;
   box-sizing: border-box;
   width: 100%;
+  overflow: hidden;
 }
 
 .athlets-headline {
@@ -458,6 +459,7 @@ body {
     padding-top: 100px;
     padding-left: 23px;
     padding-right: 23px;
+  box-sizing: border-box;
 }
 
 
@@ -643,7 +645,7 @@ order: 2;
     justify-content: center;
     align-items: center;
     top: 40%;
-    left: calc(100% - 84px);
+    left: 90%;
   
 }
 
@@ -656,7 +658,7 @@ order: 2;
     justify-content: center;
     align-items: center;
     top: 40%;
-    left: -85px;
+    left: -70px;
 }
 
 
@@ -730,11 +732,15 @@ order: 2;
     margin-top: 72px;
     margin-bottom: 72px;
     line-height: 0.8;
-  
-    
+  padding-right: 4.5vw;   
 }
 
-
+@media (max-width: 960px) and (min-width: 641px) {
+  h1 {
+  font-size: 64px;
+  }  
+  
+}
 
 
 
