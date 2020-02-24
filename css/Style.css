@@ -759,9 +759,16 @@ order: 2;
     line-height: 80px;
   }
   
+
+    .athlets {
+				position: relative;
+				padding-top: 70px;
+			}
+    
+  
+  .active-image {
+				object-position: center;
+	
+			}
 }
-
-
-
-
 
