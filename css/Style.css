@@ -736,11 +736,32 @@ order: 2;
 }
 
 @media (max-width: 960px) and (min-width: 641px) {
-  h1 {
-  font-size: 64px;
-  }  
+ 
+  .header-highlight {
+    font-size: 55px;
+  }
+  
+  .header-main {
+    background-image: url(images/football_1280.jpg");
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-size: cover;
+  }
+  
+  .top-line {
+    margin-top: 160px;
+  }
+  
+  .bottom-line {
+    margin-left: 105px;
+    line-height: 80px;
+  }
   
 }
+
+
 
 
 
