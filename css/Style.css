@@ -916,18 +916,10 @@ order: 0;
 }
   
   .store-buttons {
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    height: 34px;
-    border-radius: 50px;
-    background-color: #5e42b0;
-    width: 270px;
-    border: none;
-    color: #ffffff;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
+    align-items: center;
   }
   
   .athlets-headline {
@@ -950,6 +942,17 @@ order: 0;
     display: block;
     line-height: 50px;
     letter-spacing: 1px;
+    margin-left: 15px;
+    padding-left: 15px;
+  }
+  
+  players-title { 
+    font-size: 51px;
+    display: block;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-left: 15px;
+    padding-left: 15px;
   }
    
     .athlets-headline {
@@ -975,14 +978,7 @@ order: 0;
     width: 100%;
   }
   
-  
-.active-headline {
-  position: relative;
-  flex: auto;
-  max-width: 100%;
-}
-  
-
+ 
   
   .active:nth-child(even) .active-headline {
 order: 0;
@@ -1014,15 +1010,22 @@ order: 0;
   
   .tip-text, .tip-text2  {
  
-   font-size: 18px;
+    font-size: 18px;
     margin-top: 10px;
     line-height: 30px;
-   word-spacing: 3px;
-   display: inline-block;
+    word-spacing: 3px;
+    display: inline-block;
     margin-right: 20px;
 }
 
-  .active-title, active-title2 {
+  .active-title {
+    font-size: 48px;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+  }
+  
+  active-title2 {
     font-size: 48px;
     margin-top: 60px;
     margin-bottom: 25px;
@@ -1041,6 +1044,12 @@ order: 0;
   .footer-title {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .active-image {
+    flex: auto;
+    width: 100%;
+    
   }
   
   .footer-image {
@@ -1098,5 +1107,44 @@ order: 0;
   
   .footer-logo1 {
     width: 53px;
+  }
+  
+  .icon {
+   position: relative;
+    z-index: 2;
+    display: block;
+    height: 34px;
+    border-radius: 50px;
+    background-color: #5e42b0;
+
+    width: 201px;
+    border: none;
+    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  
+  .image-wrap {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+  margin: 0;
+}
+  
+  .button-txt {
+    font-family: "OpenSans-Regular",Arial, sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+    display: block;
+    margin-top: 3px;
+    margin-bottom: 0;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
+  
+  .athlets-headline {
+    text-align: center;
+    margin-top: 11px;
+    padding-left: 5%;
   }
 }
