@@ -1101,15 +1101,19 @@ order: 0;
 }
 
 .bottom-phrase {
-  font-style: "OpenSans-Regular",Arial, sans-serif;
-  font-size: 14px;
-  display: block;
-  text-align: left;
-  position: relative;
-  padding-left: 0;
-  margin-bottom: 0;
-  letter-spacing: 0.8px;
-  font-weight: 200;
+    text-transform: uppercase;
+    font-family: "OpenSans-Regular",Arial, sans-serif;
+    font-size: 14px;
+    color: #9b8ec1;
+    display: block;
+    z-index: 2;
+    position: relative;
+    margin-top: 12px;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.9px;
 }
   
   .footer-svg {
