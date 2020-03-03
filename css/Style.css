@@ -874,6 +874,12 @@ order: 0;
 }
 
 
+
+
+
+
+
+
 @media (max-width: 640px) {
   
   .header-main {
@@ -895,7 +901,8 @@ order: 0;
     z-index: 2;
     text-align: left;
     display: block;
-    margin-left: 30px;
+    margin-left: 20px;
+    margin-top: 100px;
 }
   .bottom-line {
     font-size: 28px;
@@ -903,8 +910,10 @@ order: 0;
     position: relative;
     z-index: 2;
     display: block;
+  text-align: left;
+    display: block;
     margin-top: 12px;
-    margin-left: 44px;
+    margin-left: 20px;
     letter-spacing: 1.5px;
     line-height: 34px;
 }
@@ -1015,12 +1024,16 @@ order: 0;
   
   .tip-text, .tip-text2  {
  
-    font-size: 18px;
-    margin-top: 10px;
-    line-height: 30px;
-    word-spacing: 3px;
+    
+    font-family: "OpenSans-Regular",Arial, sans-serif;
+    font-size: 16px;
+    color: #000000;
     display: inline-block;
-    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+    letter-spacing: 0.6p
+    
 }
 
   .active-title {
@@ -1072,45 +1085,53 @@ order: 0;
 }
  
   .top-phrase {
-  font-weight: 800;
-  line-height: 0.8;
-  font-size: 32px;
-  display: block;
-  text-align: center;
-  box-sizing: border-box;
-  position: relative;
-  margin-top: 10px;
-  padding: 0;
+    text-transform: uppercase;
+    font-family: "OpenSans-Bold",Arial, sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    display: block;
+    z-index: 2;
+    position: relative;
+    margin-top: 51px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1.2px;
+    
 }
 
 .bottom-phrase {
-  font-size: 10px;
+  font-style: "OpenSans-Regular",Arial, sans-serif;
+  font-size: 14px;
   display: block;
-  text-align: center;
+  text-align: left;
   position: relative;
-  padding: 0;
+  padding-left: 0;
   margin-bottom: 0;
-  font-weight: 500;
   letter-spacing: 0.8px;
+  font-weight: 200;
 }
   
   .footer-svg {
-    width: 63px;
-    height: 51px;
+    width: 64px;
+    height: 52px;
     margin-left: auto;
     margin-right: auto;
     background-color: #7453d3;
     border-radius: 20px 20px;
-    padding-left: 8px;
+    padding-left: 12px;
     padding-right: 0;
-    padding-top: 8px;
-    padding-bottom: 5px;
+    padding-top: 14px;
+    padding-bottom: 7px;
     z-index: 2;
     position: relative;
   }
   
   .footer-logo1 {
-    width: 53px;
+    width: 51px;
+    margin: auto;
+    padding: auto;
+    margin-right: 8px;
   }
   
   .icon {
@@ -1119,7 +1140,7 @@ order: 0;
     display: flex;
     height: 34px;
     border-radius: 50px;
-    width: 150px;
+    width: 215px;
     border: none;
     color: #ffffff;
     margin-left: auto;
@@ -1136,7 +1157,7 @@ order: 0;
   
   .button-txt {
     font-family: "OpenSans-Regular",Arial, sans-serif;
-    font-size: 8px;
+    font-size: 10px;
     text-transform: uppercase;
     display: block;
     margin-top: 3px;
@@ -1149,14 +1170,52 @@ order: 0;
     text-align: center;
     padding-left: 5%;
   }
-	
-.active-headline {
+  
+  .active-headline {
     position: relative;
     flex: auto;
     max-width: 100%;
   }
   
+
+.icon:last-child {
+    margin-left: auto;
 }
-
-
+  
+  .athlets-article, .players-article {
+    font-family: "Open-Sans-Bold", Arial, sans-serif;
+  }
+  
+    .athlets-article3, .players-article3 {
+    font-family: "Open-Sans-Bold", Arial, sans-serif;
+  }
+  
+    .active-advice {
+  /*padding: 17px 21px 56px 21px;*/
+  box-sizing: border-box;
+  flex: auto;
+  max-width: 100%;
+  padding-top: 11%;
+  padding-left: 1px;
+  position: relative;
+  }
+  
+  .footer-image {
+    width: 135px;
+    
+  }
+  
+  .header-top-image {
+    width: 135px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    fill: #ffffff;
+}
+  
+  .store-action {
+    margin-left: 0;
+  }
+}
 
