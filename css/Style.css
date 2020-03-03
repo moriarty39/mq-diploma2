@@ -1132,10 +1132,9 @@ order: 0;
   }
   
   .footer-logo1 {
-    width: 51px;
-    margin: auto;
-    padding: auto;
-    margin-right: 8px;
+    fill: #ffffff;
+    display: block;
+    width: 52px;
   }
   
   .icon {
