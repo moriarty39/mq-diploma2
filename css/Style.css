@@ -1150,6 +1150,12 @@ order: 0;
     text-align: center;
     padding-left: 5%;
   }
+	
+.active-headline {
+    position: relative;
+    flex: auto;
+    max-width: 100%;
+  }
   
 }
 
