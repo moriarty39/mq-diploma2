@@ -1172,7 +1172,7 @@ order: 0;
   
   .athlets-headline {
     text-align: center;
-    padding-left: 5%;
+    
   }
   
   .active-headline {
@@ -1195,7 +1195,7 @@ order: 0;
   }
   
     .active-advice {
-  /*padding: 17px 21px 56px 21px;*/
+ 
   box-sizing: border-box;
   flex: auto;
   max-width: 100%;
